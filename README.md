@@ -9,6 +9,7 @@ Logo na home page é possivel ver uma demonstração do resultado ao rodar o cha
 
 ### Passo 1:
 Criar uma GraphQL Query no server consumindo essa api e fornecendo para o client
+
 Exemplo de como deve ficar rodando no playground
 ```graphql
 query {
