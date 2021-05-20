@@ -59,4 +59,4 @@ Consumir a query utilizando Apollo client. Preferencia para uso do apollo-hooks.
 ## Ponto bonus (não obrigatório)
 - Explorar o [PokeAPI](https://pokeapi.co/) para quem sabe, criar uma nova tela para exibir os detalhes de cada pokemon ao clicar na lista. Fica ao seu encargo.
 - Escrever testes (back e front)
-- Sugerir melhorias na arquitetura do server imaginando como seria se ela fosse escalar
+- Sugerir melhorias na arquitetura do server imaginando como seria se ele fosse escalar
