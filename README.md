@@ -54,7 +54,7 @@ Consumir a query utilizando Apollo client. Preferencia para uso do apollo-hooks.
 
 ## Requisitos
 - Utilizar Typescript
-- Utilizar styled-componentes
+- Utilizar styled-components
 
 ## Ponto bonus (não obrigatório)
 - Explorar o [PokeAPI](https://pokeapi.co/) para quem sabe, criar uma nova tela para exibir os detalhes de cada pokemon ao clicar na lista. Fica ao seu encargo.
