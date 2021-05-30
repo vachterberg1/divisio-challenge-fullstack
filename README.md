@@ -1,16 +1,16 @@
 # Divisio full stack challenge
 
 ## Estória
-Criar uma listagem de pokemon usando a [PokeAPI](https://pokeapi.co/)
+Create a pokemon listing using the [PokeAPI](https://pokeapi.co/)
 
-Logo na home page é possivel ver uma demonstração do resultado ao rodar o chamada `https://pokeapi.co/api/v2/pokemon?limit=20`, tendo como resultado uma listagem de pokemons.
+Right on the home page it is possible to see a statement of the result by running the request `https://pokeapi.co/api/v2/pokemon?limit=20`, resulting in a listing of pokemons.
 
-## Instruções
+## Instructions
 
-### Passo 1:
-Criar uma GraphQL Query no server consumindo essa api e fornecendo para o client
+### Step 1:
+Create a GraphQL Query on the server consuming this api and providing it to the client
 
-Exemplo de como deve ficar rodando no playground
+Example of how it should be running on the playground
 ```graphql
 query {
   pokemons {
@@ -20,7 +20,7 @@ query {
 }
 ```
 
-Exemplo de como seria o resultado esperado:
+Example of what the expected result would be:
 ```json
 [
   {
@@ -35,28 +35,26 @@ Exemplo de como seria o resultado esperado:
 ]
 ```
 
-### Passo 2:
-Criar um componente no client para listar esses pokemons. Uma listagem simples apenas exibindo o resultado.
-Exemplo de como ficaria o uso do componente:
+### Step 2:
+Create a component on the client to list these pokemons. A simple listing just showing the result.
+Example of how the use of the component would look like:
 ```js
   <PokemonList
     pokemons={data}
   />
 ```
 
-### Passo 3:
-Consumir a query utilizando Apollo client. Preferencia para uso do apollo-hooks.
+### Step 3:
+Consume the query using Apollo client. Preference for use of apollo-hooks.
 
 ## Documentação & Dicas
-- Documentação sobre queries do apollo: https://www.apollographql.com/docs/react/data/queries/
-- O Apollo já está pré-configurado para uso no client. Esse exercício consiste apenas em criar e consumir a query.
-- Para duvidas, temos um canal exclusivo no nosso Slack no qual terá acesso temporário. Mais instruções será enviado por e-mail
+- Apollo queries documentation: https://www.apollographql.com/docs/react/data/queries/
+- Apollo is already preconfigured for use on the client. This exercise consists of creating and consuming the query only.
 
 ## Requisitos
-- Utilizar Typescript
-- Utilizar styled-components
+- Use Typescript
+- Use styled-components for styling
 
-## Ponto bonus (não obrigatório)
-- Explorar o [PokeAPI](https://pokeapi.co/) para quem sabe, criar uma nova tela para exibir os detalhes de cada pokemon ao clicar na lista. Fica ao seu encargo.
-- Escrever testes (back e front)
-- Sugerir melhorias na arquitetura do server imaginando como seria se ele fosse escalar
+## Bonus point (not required)
+- Explore more [PokeAPI](https://pokeapi.co/) for, maybe, create a new screen to display the details of each pokemon by clicking on the list. It is up to you.
+- Write tests (back and/or front)
