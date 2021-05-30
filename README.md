@@ -1,11 +1,14 @@
 # Divisio full stack challenge
 
-## Estória
+## Story
 Create a pokemon listing using the [PokeAPI](https://pokeapi.co/)
 
 Right on the home page it is possible to see a statement of the result by running the request `https://pokeapi.co/api/v2/pokemon?limit=20`, resulting in a listing of pokemons.
 
 ## Instructions
+
+### Step 0:
+Create a fork of this repository
 
 ### Step 1:
 Create a GraphQL Query on the server consuming this api and providing it to the client
@@ -47,11 +50,11 @@ Example of how the use of the component would look like:
 ### Step 3:
 Consume the query using Apollo client. Preference for use of apollo-hooks.
 
-## Documentação & Dicas
+## Documentation & Tips
 - Apollo queries documentation: https://www.apollographql.com/docs/react/data/queries/
 - Apollo is already preconfigured for use on the client. This exercise consists of creating and consuming the query only.
 
-## Requisitos
+## Requirements
 - Use Typescript
 - Use styled-components for styling
 
