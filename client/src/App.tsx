@@ -1,20 +1,24 @@
+import { ApolloProvider } from '@apollo/client'
+import client from 'config/apollo-client'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from 'screen/Home'
+import Start from 'screen/Start'
 import { GlobalStyle } from './style-guide/GlobalStyle'
 
-import * as S from './styles'
-
 const App = () => (
-  <>
+  <ApolloProvider client={client}>
     <GlobalStyle />
-    <S.Container>
-      <S.Header>
-        <S.Logo />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <S.Link>Learn React</S.Link>
-      </S.Header>
-    </S.Container>
-  </>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Start />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  </ApolloProvider>
 )
 
 export default App
